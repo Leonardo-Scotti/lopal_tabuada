@@ -1,6 +1,8 @@
 package br.dev.scotti.tabuada.gui;
 
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -96,6 +98,16 @@ public class TelaTabuada {
 		tela.getContentPane().add(labelResultado);
 		tela.getContentPane().add(scrollTabuada);
 
+		//Adicionar um ouvinte de ação (Listener) ao botão calcular
+		btnCalcular.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
 		// Tornar a tela visível deverá ser a última linha deste método.
 		tela.setVisible(true);
 	}
